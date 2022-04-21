@@ -265,7 +265,7 @@ if graphical:
   config = config.replace("# hardware.pulseaudio.enable = true;", "hardware.pulseaudio.enable = true;")
   config = config.replace("# services.xserver.libinput.enable = true;", "services.xserver.libinput.enable = true;")
   # See https://nixos.wiki/wiki/GNOME.
-  config = config.replace("# services.xserver.enable = true;", "services.xserver.enable = true;\n  services.xserver.desktopManager.plasma5.enable = true;"):
+  config = config.replace("# services.xserver.enable = true;", "services.xserver.enable = true;\n  services.xserver.desktopManager.plasma5.enable = true;")
 
 ram_bytes = psutil.virtual_memory().total
 print(f"Detected {(ram_bytes / 1024 / 1024 / 1024):.3f} Gb of RAM...")
