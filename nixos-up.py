@@ -262,6 +262,7 @@ config = re.sub(r" *# Define a user account\..*\n( *# .*\n)+", "\n".join([
 if graphical:
   config = config.replace("# services.printing.enable = true;", "services.printing.enable = true;")
   config = config.replace("# sound.enable = true;", "sound.enable = true;")
+  config = config.replace("# networking.wireless.enable = true;", "networking.networkmanager.enable = true;")
   config = config.replace("# hardware.pulseaudio.enable = true;", "hardware.pulseaudio.enable = true;")
   config = config.replace("# services.xserver.libinput.enable = true;", "services.xserver.libinput.enable = true;")
   # See https://nixos.wiki/wiki/GNOME.
